@@ -72,8 +72,9 @@ public class A01_HelloWorld {
 		System.out.println('7');
 		
 		System.out.println(10.10011);  // 소수는 실수형
+		System.out.println("메세지 수정할게");
 		
-
+// 메세지 수정할려고
 	}
 
 }
