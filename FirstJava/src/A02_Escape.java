@@ -15,7 +15,7 @@ public class A02_Escape {
 		System.out.println("나는 \"철수\"랑 게임을 했다.");
 		System.out.println("나는 \'철수\'랑 게임을 했다.");
 		System.out.println('\'');
-		
+	
 	}
 
 }
