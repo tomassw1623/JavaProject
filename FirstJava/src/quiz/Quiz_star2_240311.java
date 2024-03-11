@@ -1,5 +1,5 @@
 package quiz;
-public class quiz {
+public class Quiz_star2_240311 {
     public static void main(String[] args) {
         int dan = 5;
         
