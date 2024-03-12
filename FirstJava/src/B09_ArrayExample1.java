@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class B09ArrayExample1 {
+public class B09_ArrayExample1 {
 
 	public static void main(String[] args) {
 		// 배열
