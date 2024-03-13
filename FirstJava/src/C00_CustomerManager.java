@@ -22,7 +22,6 @@ public class C00_CustomerManager {
 	// 기본 입력장치로부터 데이터를 입력받기 위해서 Scanner 객체 생성
 	static Scanner scan = new Scanner(System.in);
 	
-
 	public static void main(String[] args) {
 		// 고객 관리 프로그램 메뉴
 		while(true) {
@@ -92,6 +91,7 @@ public class C00_CustomerManager {
 			}
 		}
 	}
+
 
 
 	public static void insertCistomerData() {
