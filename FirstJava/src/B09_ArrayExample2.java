@@ -111,7 +111,6 @@ public class B09_ArrayExample2 {
 		// 깊은 복사를 통해서 byeMessage에 byeMessage2에 있는 배열의 값을 모두 복사하려고 한다면...
 		System.arraycopy(byeMessage2, 0, byeMessage, 0, byeMessage2.length);  //모두 복사
 		System.out.println("모두 복사 : "+Arrays.toString(byeMessage));
-		
 	}
 
 }
