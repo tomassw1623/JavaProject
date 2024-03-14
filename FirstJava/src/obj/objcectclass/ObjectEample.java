@@ -30,11 +30,19 @@ public class ObjectEample {
 		Person p3 = new Person();
 		System.out.println(new String("hello").hashCode()); // 객체 비교를 할려면 수정을 해야한다.
 		System.out.println("hello".hashCode());
+		p3.name = "홍길동";
+		p3.age = 20;
+		System.out.println("hash값 비교!!!");
+		System.out.println(p1.hashCode());
+		System.out.println(p3.hashCode());
 		// 참조자료형은  ==을 사용하여 비교할 수 없다 
 		// 오브젝트가 아니라서 가능
 		// equals는 왠만에서 사용하지 않습니다.
 		// hashcode로 재정의를 통해 비교
-
+		System.out.println("p3 객체의 getClass()의 결과 : "+p3.getClass().toString());
+		System.out.println("p3와 p2값의 equals()의 결과 : "+p3.equals(p2));
+		
+		System.out.println("");
 	}
 
 }
