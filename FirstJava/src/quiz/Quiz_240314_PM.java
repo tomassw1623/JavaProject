@@ -12,7 +12,7 @@ class Airplane {
 	
 	// 이륙 메세드
 	public void takeOff(){
-		System.out.println(name+"가 이륙합니다.");
+		System.out.println("비행기가 이륙합니다.");
 		
 	}
 	
@@ -28,7 +28,7 @@ class Airplane {
 
 class SuperSonicAp extends Airplane {
 	int flyMode;
-	 public SuperSonicAp(String name, int flyMode) {
+	 public SuperSonicAp(String name) {
 	        super(name); // 부모 클래스의 생성자 호출
 	        this.flyMode = flyMode;
 	    }
@@ -62,11 +62,13 @@ public class Quiz_240314_PM {
 	
 	public static void main(String[] args) {
 		// SuperSonicAp 인스턴스 생성
-        SuperSonicAp superSonicAp = new SuperSonicAp("초음속 제트기 ", 1);
-
-        // fly 메서드 테스트
-        superSonicAp.fly(); 
-        // fly 메서드를 0으로 변경하여 테스트
-        superSonicAp.fly(); // "초음속 제트기 이(가) 비행합니다." 출력
+        SuperSonicAp s1 = new SuperSonicAp("스텔스");
+        s1.takeOff();
+        s1.fly();
+        s1.flyMode = 1;
+        s1.fly();
+        s1.flyMode = 0;
+        s1.land();
+        
     }
 }

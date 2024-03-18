@@ -47,6 +47,10 @@ public class Student extends Person {
 		this.studentId = studentId;
 		this.major = major;
 	}
+	
+	public void study() {
+		System.out.println(name + "은/는 공부합니다.");
+	}
 
 	// Overriding
 	// 부모 클래스로 부터 상속받은 메서드를 자식 클래스에서 행위(Method)를 바꾸거나 보완하기 

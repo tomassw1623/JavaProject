@@ -13,7 +13,7 @@ public class C03_inheritance_Example {
 //			p.weight = 100.0f;
 			
 			Person p = new Person("홍길동", 25, 178.8f, 105.6f);
-			System.out.println(p.getDatails());
+			System.out.println(p.getDetails());
 			
 //			Student s1 = new Student();
 //			s1.name = "이순신";
