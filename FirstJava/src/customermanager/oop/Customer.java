@@ -1,7 +1,11 @@
 package customermanager.oop;
 
-import customermanager.CustomerManager;
 import obj.inheritance.Person;
+
+//이전에 만들어 놓은 고객관리 프로그램을 OOP형식으로 변경하여 재 프로그래밍을 진행!
+	// 1. Customer 클래스를 생성하고,
+	// 2. 관련 프로그램을 위에 생성한 Customer 클래스 기준으로 재작성하세요!
+
 
 public class Customer {
 	
@@ -11,16 +15,16 @@ public class Customer {
 	private String email;
 	private int birthYear;
 	
-	public Customer() {  }   //기본 생성자  ***단축키: Shift+Alt+S(from Superclass)***
+	public Customer() {  }   //기본 생성자
 
-	public Customer(String name, String gender, String email, int birthYear) {  //필드 생성자 ***단축키: Shift+Alt+S(usingfields)***
+	public Customer(String name, String gender, String email, int birthYear) {  //필드 생성자
 		this.name = name;
 		this.gender = gender;
 		this.email = email;
 		this.birthYear = birthYear;
 	}
 
-	// Getter, Setter  // ***단축키: Shift+Alt+S(Getter and Setter)***
+	// Getter, Setter
 	public String getName() {
 		return name;
 	}
@@ -53,16 +57,16 @@ public class Customer {
 		this.birthYear = birthYear;
 	}
 
-	@Override  ////기본 생성자  ***단축키: Shift+Alt+S(toString)***
+	@Override
 	public String toString() {
 		return "Customer [name=" + name + ", gender=" + gender + ", email=" + email + 
 				", birthYear=" + birthYear + "]";
 	}
-	
+
 	// equals()를 Override하여 비교할 수 있게 만들어 보세요!!
 	@Override
 	public boolean equals(Object obj) {
-		// 동일 객체 확인
+		//동일 객체 확인
 		if (this == obj) {
 			return true;
 		}
@@ -70,15 +74,19 @@ public class Customer {
 		if (obj == null) return false;
 		if (getClass() != obj.getClass()) return false;
 		Customer other = (Customer)obj;
-		if (name == null) {
-			if(other.name != null) {
+		if(name == null) {
+			if (other.name != null) {
 				return false;
 			}
-		}else if (!name.equals(name)) return false;
+		}else if (!name.equals(other.name)) return false;
 		if (!gender.equals(other.gender)) return false;
 		if (!email.equals(other.email)) return false;
 		if (!(birthYear == other.birthYear)) return false;
 		
 		return true;
 	}
+	
+	
+	
+
 }
