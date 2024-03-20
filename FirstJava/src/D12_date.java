@@ -7,7 +7,7 @@ public class D12_date {
 		
 		Date date = new Date();
 		
-		System.out.println(date.toString());
+		
 		
 		// 특정 문자열 포멧으로 얻어내고 싶은 경우... SimpleDateFormat 클래스 사용.
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년도 MM월 dd일 HH시 mm분 ss초");
