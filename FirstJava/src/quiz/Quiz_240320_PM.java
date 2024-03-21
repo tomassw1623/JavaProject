@@ -45,12 +45,28 @@ public class Quiz_240320_PM {
 		}
 		System.out.println("합집합 : "+union);
 		
-		ArrayList intersector = new ArrayList(list1);
-		for (Object o : list2) {
-			if(intersector.contains(o));
-			intersector.add(o);
-		}
-		System.out.println("교집합 : "+intersector);
+		ArrayList intersection = new ArrayList();
+		for(Object o : list2)
+			if(list1.contains(o))
+				intersection.add(o);
+		System.out.println("교집합 : "+intersection);
+		
+		ArrayList diff1 = new ArrayList(list1);
+		for(Object o : list2)
+			if(diff1.contains(o))
+				diff1.remove(o);
+		System.out.println("차집합 1 : "+ diff1);
+		
+		ArrayList diff2 = new ArrayList(list2);
+		for(Object o : list1)
+			if(diff2.contains(o))
+				diff2.remove(o);
+		System.out.println("차집합 2 : "+ diff2);
+		
+		ArrayList diff = new ArrayList();
+		diff.add(diff1);
+		diff.add(diff2);
+		System.out.println("차집합 모음 : "+diff);
 		
 //		List<Integer> arr1 = new ArrayList<>();
 //		List<Integer> arr2 = new ArrayList<>();
