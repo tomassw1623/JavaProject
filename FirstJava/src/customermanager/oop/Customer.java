@@ -15,7 +15,7 @@ public class Customer {
 	private String email;
 	private int birthYear;
 	
-	public Customer() {  }   //기본 생성자
+	public Customer(String string, char c, String string2, int i) {  }   //기본 생성자
 
 	public Customer(String name, String gender, String email, int birthYear) {  //필드 생성자
 		this.name = name;
