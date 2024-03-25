@@ -1,5 +1,10 @@
 package quiz;
 
+//1. User 클래스를 생성해 주세요 User클래스는 이름과 나이를 맴버변수로 가지고 있는
+// 클래스 입니다. toString작업까지 완료해주세요.
+
+
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
