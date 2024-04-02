@@ -4,17 +4,11 @@ import java.io.Serializable;
 
 public class Customer implements Serializable {
 
-	private static final long serialVersionUID = -2726238373623804L;
-	
 	private String name;
 	private char gender;
 	private String email;
 	private int birthYear;
-	private transient boolean isJoin;
 	
-	//기본 생성자
-	public Customer() {}
-
 	//필드 생성자
 	public Customer(String name, char gender, String email, int birthYear) {
 		this.name = name;
@@ -36,6 +30,10 @@ public class Customer implements Serializable {
 		return email;
 	}
 
+	public int getBirthYear() {
+		return birthYear;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -48,35 +46,14 @@ public class Customer implements Serializable {
 		this.email = email;
 	}
 
-	
-	public int getBirthYear() {
-		return birthYear;
-	}
-
-	public boolean isJoin() {
-		return isJoin;
-	}
-
 	public void setBirthYear(int birthYear) {
 		this.birthYear = birthYear;
 	}
 
-	public void setJoin(boolean isJoin) {
-		this.isJoin = isJoin;
+@Override
+public String toString() {
+	 return "이름: " + name + ", 성별: " + gender + ", "
+	 		+ "이메일: " + email + ", 출생년도: " + birthYear;
 	}
-
-	@Override
-	public String toString() {
-		return "Customer [name="+name+", gender="+gender+", email="+email+
-				", birthYear="+birthYear+"]";
-	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }
