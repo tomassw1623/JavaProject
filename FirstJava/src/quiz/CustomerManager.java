@@ -13,7 +13,7 @@ import obj.Customer;
 
 // 고객 관리 클래스
 public class CustomerManager {
-	private static final String FILENAME = "CustomerManager.txt";  // 텍스트 파일 지정
+	private static final String FILENAME = "C:\\AWSDEVEOP\\FirstJava\\saveFile\\CustomerManager.txt";  // 텍스트 파일 지정
 	private List<Customer> customers; // 고객 리스트
 	
 	// 생성자
